@@ -11,7 +11,7 @@ public class C02_Static {
        tum objelerde gorunur.
        static Class elemanlarina Class uzerinden ulasilir.
        Static variable'larin diger adi class variable'dir.
-       non static variable'larin diger adlari "instance variable" ve "object variable"dir.
+       non static variable'larin diger adlari "instance variable" veya "object variable"dir.
  */
     static int sayi1;// static variable
     int sayi2;// static olmayan variable = instance

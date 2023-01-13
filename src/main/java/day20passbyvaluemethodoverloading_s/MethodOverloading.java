@@ -16,13 +16,13 @@ public class MethodOverloading {
         bu yuzden isim ve parametre "Method Signature" olarak adlandirilir.
         4) Method overloading olustururken  return type'i degistirmenin hicbir etkisi yoktur.
            Method overloading olustururken  access modifier'i degistirmenin hicbir etkisi yoktur.
-           Method overloading olustururken  methodu statik veya non-static yapmanin hicbir etkisi yoktur.
+           Method overloading olustururken  methodu static veya non-static yapmanin hicbir etkisi yoktur.
            Method overloading olustururken  method body'i degistirmenin hicbir etkisi yoktur.
          5) "Private" methodlar overload edilebilir.//private method's can be overloaded
          cunku method overloading sadece bir class'in icinde olur.
          "private" olmak ise baska class'lara gidildiginde problem olusturur.
-         6) Statik methodlar overload edilebilirler.
-         ustundeki degisiklikler herkes tarafindan aninda gorulebilen objelere statik denir,gorulemeyenlere
+         6) Static methodlar overload edilebilirler.
+         ustundeki degisiklikler herkes tarafindan aninda gorulebilen objelere static denir,gorulemeyenlere
          non-static denir.(kayitli ogrenci sayisi, gokteki ay ornegi)
          */
      add(3,5);

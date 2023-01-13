@@ -10,7 +10,7 @@ public class C01_PassByValue {
        variable'in icindeki degeri kopyalar ve methodun icerisine kopya degeri gonderir 
        deger uzerinde yapilan degisiklikler orjinal parametreyi etkilemez. 
        
-       Pass by referance: Refernace kopyalananir ve methodda kullanilir.Yapilan degisiklik orjinal parametreyi etkiler 
+       Pass by referance: Referance kopyalanir ve methodda kullanilir.Yapilan degisiklik orjinal parametreyi etkiler
        bu tarz programlar degeri korumak istiyorsa isi developer'a birakmistir.kendisi degeri degistirir.
         */
         

@@ -10,8 +10,8 @@ public class C03_PassByValueArray {
         method void olsun.
         main methoda döndükten sonra yeniden array'i yazdıralım*/
 
-        int sayilar [] = {3,4,5,6};
-        System.out.println("sayilar[]="+Arrays.toString(sayilar));
+        int sayilar[] = {3, 4, 5, 6};
+        System.out.println("sayilar[]=" + Arrays.toString(sayilar));
 
         elemanDegistir(sayilar);
 
@@ -23,10 +23,11 @@ public class C03_PassByValueArray {
     }
 
     private static void arrayiDegistir(int[] sayilar) {
-        sayilar = new int [6];
-        System.out.println("method icinde arrayi degistirince sayilar []="+Arrays.toString(sayilar));
+        sayilar = new int[6];
+        System.out.println("method icinde arrayi degistirince sayilar []=" + Arrays.toString(sayilar));
 
     }
+
 
     private static void elemanDegistir(int[] sayilar) {
         sayilar[0] = 10;

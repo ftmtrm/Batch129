@@ -3,7 +3,7 @@ package day20passbyvalueoverloading;
 import java.util.ArrayList;
 import java.util.List;
 
-public class C03_PassByValueList {
+public class C04_PassByValueList {
     public static void main(String[] args) {
        /* bir list oluşturalım.
         sonra list elemanlarını  elemanDegistir methodu yazıp orada

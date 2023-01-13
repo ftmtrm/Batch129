@@ -1,2 +1,0 @@
-package MyPractices.replit;
-

@@ -6,7 +6,7 @@ import java.util.Collections;
 public class ArrayLists01 {
     public static void main(String[] args) {
         /* 1) ArrayList'ler coklu data depolamak icin kullanilir.
-           2) Arraylist'ler non=primitive data type'indeki coklu datalari depolamak icin kullanilir
+           2) Arraylist'ler non-primitive data type'indeki coklu datalari depolamak icin kullanilir
               Arrayler ise primitive data veya reference kabul ederler.(1.fark)
            3) Arraylist'leri olustururken icine koyacaginiz eleman sayisini basta soylemeye gerek yoktur.(bu daha iyidir)
            4) Arraylist(List)'ler eleman sayisinda flexible'dir.ancak Array'ler flexible degildir.(2.fark)

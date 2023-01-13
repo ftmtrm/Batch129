@@ -12,7 +12,7 @@ public class C07_Overloading {
         Ayni isimde ayni classta birden fazla method olusturabilirmiyiz?
         Java ayni isimde ayni class'ta birden fazla method oldugunda icerisindeki data type'ina' data sayisina ya da
         yerlerine gore en uygun olani secer.
-        eger bir classta isimlerin ayni data typelari farkli methodlar olusturursak buna METHOD OVERLOADING denir.
+        eger bir classta isimleri ayni data typelari farkli methodlar olusturursak buna METHOD OVERLOADING denir.
         Java hangi methodu kullanacagina karar verirken optimizasyona gider.
         en uygun olani en az Autowidening gerektireni secer.
 
