@@ -1,11 +1,15 @@
 package day25inheritance;
 
-public class C02_Isci extends C03_Muhasebe{//memur ile kardes
+public class C02_Isci extends C03_Muhasebe{//memur ile kardes "isci is a"
 
     protected String isciStatu = "surekli isci";
 
-    protected void mesai() {
-            System.out.println("Isciler her cagrildiklarinda" + " haftada " + " 5 gun calisir");
+    protected String mesai() {
+
+        System.out.println("Isciler her cagrildiklarinda" + " haftada " + " 5 gun calisir");
+        String str = "Fazla mesai";
+        return str;
+
         }
     public static void main(String[] args) {
         C02_Isci isci1 = new C02_Isci();
@@ -33,7 +37,7 @@ public class C02_Isci extends C03_Muhasebe{//memur ile kardes
                 ", soyIsim='" + soyIsim + '\'' +
                 ", adres='" + adres + '\'' +
                 ", telNo='" + telNo + '\'' +
-                ", personelNo=" + personelNo +
+                ",  mesai ()='" + mesai() + '\'' +
                 '}';
     }
 }

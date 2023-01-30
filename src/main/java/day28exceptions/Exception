@@ -1,0 +1,71 @@
+
+1)"Exception" (istisnai hata) javada kodlarimizi
+         calistirirken meydana gelen beklenmedik durumlardir.
+2) Exception lar ile calismanin iki yolu vardir
+      a) try-catch block kullanma ve exception
+         olussa bile calısmayı devam ettirme
+      b) throw exception kullanarak calismayi
+         durdurma (mesela yazdigimiz kod geregi bir
+         dosya uzerinden okuma yapmamız
+         gerekiyor ise bu dosyamız eger silinmis ise java dosyayi bulamaz ve
+         application devam etmez)
+3) Eger exception'ı handle etmez isek (sorunu halletmezsek) java calismayi durdurur.
+4) try-catch kullanirken try kodunu bir yada birden fazla catch ile birlikte kullanabiliriz
+5) try ; catch olmadan tek basina kullanilamaz.
+6) Eger yazmis oldugunuz harhangi bir kod satirinda  problem olabiliecegini dusunuyorsaniz
+   try-catch block icine koymalisiniz
+7) catch block parantezi icerisine olmasi muhtemel exception class ismi yazilir
+8) e.getmessage(), methodunu kullanarak teknik mesajlar elde edebiliriz.
+!!!!sout'un icine sadece 'e' yazarsak, java.lang.(exception adi):(e.getmessage()'daki mesaj)
+   System.out.println(); burada yazmis oldugum mesajlar benim teknik olmayan aciklamalarimdir
+   e.printStackTrace(); methodu Exception ile ilgili detaylica teknik mesaj verir. kod calismaya devam eder.
+   log akisinda 3'u birlikte kullanilirsa e, e.getmessage()'dan sonra gorulur.
+   System.err.println("burasi renkli"); hata mesajini renkli olarak verir bu sayede cansolda diger mesajlardan ayırmak icin kullaniriz
+9) Eger try body icindeki kod sorunsuz calisirsa catch blok devreye girmez
+10) !!!Ayni anda birden fazla exception firlatmaz.
+
+Suleyman Hoca NOTLARI
+* Exception beklenmedik problem(Unexpected issue) demektir.Seyahatte benzinin bitmesi,arabanin bozulmasi gibi.
+* Gercek hayatta karsilastigimiz beklenmedik problemler icin cozum yollarimiz vardir.Applicaton'larda beklenme
+medik problemler icin cozum yollari uretmeliyiz.bu isleme "Exception Handling" denir.
+* Iki turlu olur Compile Time Exception Run Time Exception
+CTE: Kod yazarken farkedilir ve yazilan kodun alti kirmizi cizgi ile cizilir.
+RTE: Kod yazarken farkedilmez ama kodu calistirdiginizda console'da hata verir.
+* Exception'lar disinda error diye adlandirdigimiz handle edilemeyen problemler vardir.
+gercek hayatta soforun olmesi gibi handle edilemeyecek durumlar "Error"dur.
+* Exception'lar ayni zamanda class'tir.
+* Application'larda Memory'nin dolmasi ERROR'dur.
+    1)Stack memory dolarsa "StackOverFlow Error"alirsiniz.
+    2)Heap memory dolarsa "OutOfMemory Error"alirsiniz.
+* Yazdiginiz kod calismadiginda problemi bulmak icin "Log akisina" bakariz.(Interview sorusu)
+* Exception'i handle edersek try kismi calismayabilir ama handle'dan sonraki hersey calisir.
+Application donmaz/durmaz.(Trafikte benzin bitiyo ama benzin geldikten sonra ise gec de olsa gidiyor.
+sofor olmuyor yani)
+* coklu exception durumunda tek try'la birden fazla catch kullanabiliriz.
+hangi exception'a uygunsa onun icindeki mesaji yazdirir.
+* try kisminda birden fazla Exception olusturma ihtimali olan kod varsa coklu catch kullanilabilir.
+coklu catch kullanildiginda exception classlar arasinda Parent child iliskisi yoksa catch'lerin sirasi
+onemli degildir. Ama koddaki siralamaya uymak tavsiye edilir.
+Parent child iliskisi varsa catch'lerin sirasi  onemlidir.ya child class'i uste yazarak child ve parent class'lar icin
+ozelllestirilmis kodlar yazarsiniz (Hirsiz icin 155, hasta icin 112 gibi)
+ya da child'i hic kullanmaz sadece parent ile exception'lari handle etmeye calisirsiniz.
+(Hirsiz icin 911, hasta icin 911 gibi)
+Child olan class ustte olmalidir yoksa hata verir.
+* Exception yerine neden if/else kullanilmiyor?
+Exception handling'te if-else kullanilmaz.
+if/else kullanirsak olusabilecek her problemi spesifik olarak if parantezinin icine yazmamiz gerekir.
+bu da ciddi bir matematik bilgisi gerektirir ve yazacagimiz kodu cok uzatir.
+Ama try catch'te Java ilgili Exception ile alakali olusabilecek butun problemleri yakalar.
+(if/else kullanirsak herbir olusacak matematiksel problemi bilip if'in icine yazmak zorunda kaliriz.
+Ancak try catch matematikle ilgili her turlu problemi yakalar ve cozum uretir.
+if icin sizin bilip bulup cozum uretmeniz gerekir.try catch kullanilirsa gerekmez.)
+* Arithmetic Exception yazdiginiz kodda matematiksel islem kullaniyorsaniz alinabilecek bir Exception'dir
+* NumberFormatException: Sayi formati hatasidir. Icinde rakamlar disinda karakter olan bir String'i
+sayiya cevirmek isterseniz olusur.
+* StringOutOfBoundException: String'te index kullanirken sinirlarin disina cikma hatasidir.
+* e.getCause(): hatanin sebebini verir.(soutla yazdirinca)
+StringOutOfBoundException ve ArrayIndexOutOfBoundException'da hatanin sebebini soylemedi.(null yazdirdi)
+* ArrayIndexOutOfBoundException: Array'lerde olmayan bir index kullanildiginda Java bu exception'i atar.
+* NullPointerException:String'in degeri null olacaksa method kullaniminda dikkat etmek gerekir yoksa Java
+bu exception atabilir.(mesela lenght,contains gibi methodlari kullanamayiz).
+*****IOException:butun exception'larin parent'idir.

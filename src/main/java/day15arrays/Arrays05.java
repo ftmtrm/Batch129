@@ -18,7 +18,7 @@ public class Arrays05 {
         Arrays.sort(brr, Comparator.comparingInt(String::length).reversed());
         System.out.println(Arrays.toString(brr));
 
-        //Ex3://Ex: String Array elemanlarini karakter sayisina gore kucukten buyuge siralayiniz.
+        //Ex3://Ex: String Array elemanlarini karakter sayisina gore buyukten kucuge siralayiniz.
         //ayni karakter sayisina sahip olanlari da alfabetik sirayla ekrana yazdirin
 
          String crr[] = {"Michael" , "Ajda" , "Thomas", "Cuneyt","Tom", "Reyhane", "Ali", "Cin", "Cem", "Gabriel"};

@@ -12,7 +12,7 @@ public class Arrays02 {
         System.out.println((vowels));
 
         //2.yol: use Array - Loop
-        String letters[] = s.split("");//split methodu bize Array verir.
+        String[] letters = s.split("");//split methodu bize Array verir.
         System.out.println(Arrays.toString(letters));
 
         int counter = 0;

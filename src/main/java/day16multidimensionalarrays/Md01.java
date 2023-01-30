@@ -8,8 +8,6 @@ public class Md01 {
         // Arraylere primitive data veya reference konulur.
         // Ama siz bir arrayi yazdirmak istediginizde Java adresler yardimiyla non-primitive dataya ulasir ve
         // o non-primitive datayi sanki arrayin icindeymis gibi gosterir.
-
-
         //Note2: MD arraylerde elemanlara birer birer ulasmak icin nested loop kullanilmasi gerekir.
 
         int a[][] = {{2, 5, 1}, {32, 75}};

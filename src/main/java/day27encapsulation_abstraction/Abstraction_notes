@@ -1,0 +1,38 @@
+
+    kullanilmayan codelar unuse code olur. unuse code'lar yazilmamalidir.
+    (public void math() {"Toplama..."} seklindeki bir methodda
+    Toplama yazan kismini siliyoruz bu sekilde body'si olmayan method oluyor.
+
+    1)bazen method body'sini yazmak gerekmez.bu durumlarda body'siz method olusturmak gerekir.
+    Java bu methodlara Abstract method denir.
+    2)body'si olmayan methodlar child class'lar tarafindan kullanilmak zorundadir yani override edilmelidir.
+    bu yuzden bir fonksiyonun child classlar tarafindan kullanilmasini mecbur kilmak isterseniz
+    o methodu abstract yapmak gerekir.
+    3)bir methodun body'sini silmek o methodun abstract olmasi icin yeterli degildir.
+    access modifier ile return type arasina "abstract" keywordunu yazmak gerekir.
+    4)abstract methodlar  siradan classlarin(concrete) icine yazilamazlar.
+    Abstract methodlarin icine yazildiklari classlar da abstract class olmak zorundadir.
+    5)Abstract classlarda hem abstract methodlar hem concrete methodlar kullanilabilir.
+    6)Concrete classlar Abstract classlarin child'i olabilirler.
+    "abstract methodlarin override edilme zorunlulugu concrete classlar icin gecerlidir.
+    7)abstract class'larin parent'taki abstract methodlari override etme zorunlulugu yoktur.
+    mesela Rooms class abstract class'tir.Room class'i Courses abstract classin
+    child'i yapildigi ve override yapilmadigi halde kod sikayet etmiyor.
+    8)concrete classlar final oldugunda child classa sahip olamazlar.
+    Abstract classlar icin child class olmalidir.
+    cunku child classlar abstract parent classtaki abstract methodlari kullanirlar.
+    bu yuzden Java  abstract classlarin final olmasina musaade etmez.
+    final methodlar override edilemezler halbuki abstract methodlar override edilmek icin olusturulurlar.
+    bu celiskidir bu yuzden Java Abstract methodlarin final olmasina musaade etmez.
+    (Final classlarin child'i olmaz bu nedenle abstract classlar final olamazlar.)
+    9) Abstract methodlar private olamazlar.cunku child classlar abstract methodlari kullanirlar.
+    private yapinca kullanima kapali olur.bu celiskidir.
+    bu yuzden Java abstract methodlarin private olmasina musaade etmez.
+   10) Abstract methodlar statik olamazlar.cunku statik methodlar override edilemezler.
+   halbuki abstract methodlar override edilmek icin olusturulmustur.
+   11) Abstract classlarin icinde abstract methodlar vardir.
+   Abstract methodlarin body'si olmadigindan bu methodlar yarim method sayilir.
+   dolayisiyla abstract classlar eksigi olan kaliplar gibi dusunulebilir.
+   Java eksik kaliplarin obje uretmesine musaade etmez.bu yuzden abstract classlardan obje uretilemez.
+   12) Abstract classlarin constructor'i vardir ama bu constructor obje uretemez.
+

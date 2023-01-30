@@ -5,8 +5,8 @@ public class Varargs01 {
     Varargs'lar method olustururken parametre sayisi konusunda bize esneklik verir.
     Method cagirirken kullanilan sayilara "arguments" denir. 4,5,6,7,8,9
     int a int b'ye ise "parametre" denir.
-    Note: Bir method icinde birden fazla "varargs parametre" kullanirsaniz ikincisi "unused code" ya da "unreachable code" olur.
-    o nedenle kullanilamaz
+    Note: Bir method icinde birden fazla "varargs parametre" kullanirsaniz
+    ikincisi "unused code" ya da "unreachable code" olur. o nedenle kullanilamaz
    Note: siradan bir parametre ile varargs parametre birlikte ayni method icinde kullanilabilir.
    Ancak vararags her zaman son parametre olmalidir.
      */

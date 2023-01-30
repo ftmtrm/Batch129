@@ -1,0 +1,49 @@
+    //cats eat yazdirmak icin override'dan sonra alt satirda yazan super(eat)'i sildik kendimiz soutun icine istedigimizi yazdik.
+    // Parent'taki objeyi alip degistirip kullanmaya overriding denir.
+    //child'daki override edilmis eat() methoduna overriding method denir.
+    //parent'taki override edilmis eat() methoduna overridden method denir.
+    /*1)Parent Class'daki method'u Child Class icinde ozellestirerek kullanmaya "Overriding " yapmak denir.
+      2)Overriding 'de method'un parantezine, method'un ismine dokunulmaz, method'un body'si degistirilir.
+      3)Override ==> Override annotation :Override kurallarinin Java tarafindan kontrol edilmesini saglar.
+      4)Overriding 'de parent Class'daki method'a "Overridden Method",
+      child class'daki method'a ise "Overriding Method" denir.
+      5)"c5
+      6)Child class'taki override edilmis method(overriding method)'un
+      access modifier'i Parent Class'daki override edilmis method(Overridden Method)'un
+      access modifier'indan dar olamaz.
+    Overriden Method==>protected ise Overriding method ==> protected +public
+    Overriden Method==>default ise Overriding method ==> default +protected+ public
+    Overriden Method==>private ise Overriding method ==> override olmaz ki acces modifier olsun. bkz 5. kural
+      7)Child Class'da override edilen method'un(Overriding Method) return type'i method'un return ettigi data type'inin
+aynisi veya o data type'inin parent'i olarak secilir.
+      8)Method'un return type'i primitive ise overriding yaparken return type degistirilemez.
+      Cunku return type ya ayni olur veya Parent'tan secilir. Ama primitive'ler arasinda parent-child iliskisi olmadigindan
+      Parent'tan secilemez. o zaman tek secenek "aynisi olmalidir" kalir.
+      9)Method'un return type'i "Wrapper Class" ise' overriding yaparken return type degistirilemez.
+      Cunku return type ya ayni olur veya parent'tan secilir.ama Java bir wrapper class'i digerinin class'i parenti yapmadigindan
+      parent'tan secme ihtimali yoktur' geriye sadece aynisi olma ihtimali kalir.
+      10) Method'un return type'i void ise Overriding yaparken return type degistirilemez.
+
+      11)Final kelimesini "Variable"larda kullanabilirsiniz.
+                    ->final variable ise
+                    i) mutlaka değer atanmalıdır
+                    ii) ilk atanan değer değiştirilemez
+
+      12)Final kelimesini "Method" larda kullanabilirsiniz.
+                     ->method final ise;
+                      i)methodun body'si değiştirilemez
+                      ii)method body'si değiştirilemeyince override yapmak mümkün olmaz
+
+      13)Final kelimesini "Class"larda kullanabilirsiniz.
+                     ->class final ise;
+                       i)o class'ın child'ı olamaz
+      14)"Final" methodlar ve "static" methodlar "override" edilemezler.
+      15) "Override" yapabimek icin "inheritance" sarttir. Baska bir ifade ile Parent child iliskisi sarttir.
+inheritance prerequisttir
+      16) Method overlaoding Compile Time Polymorphism'dir.
+      Method Overloading "Run Time Polymorphism"dir.(coksekilli)
+      Polymorphism:ayni method farkli gorunumlere sahip demektir.
+
+      17) Method Overloading "static Polymorphism" dir, Method Overriding "dynamic Polymorphism" dir.
+      18)Method overloading'te method signature farkli olmalidir, Method Overriding'de ise
+      method signature ayni olmalidir.

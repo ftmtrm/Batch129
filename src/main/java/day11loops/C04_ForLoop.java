@@ -3,8 +3,6 @@ package day11loops;
 public class C04_ForLoop {
     public static void main(String[] args) {
         //Ex1: 1'den 100'e kadar 6ile bolunenler haric tum tamsayilari ekrana yazdiriniz
-
-
         for (int i = 1; i < 101; i++) {
             if (i%6==0){
                 continue;//bosver demek alma diyor yani 6'nin katlarini

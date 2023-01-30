@@ -1,11 +1,13 @@
 package day15arrays;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Arrays04 {
     public static void main(String[] args) {
         //Bir Array'in icinde herhangi bir elemanin olup olmadigini kontrol eden ve
         // kac kere tekrarlandigini gosteren kodu yaziniz.
         int a [] = {0,2,3,0,12,0};
-
         int num = 3;
         int counter = 0;
         for (int w: a) {

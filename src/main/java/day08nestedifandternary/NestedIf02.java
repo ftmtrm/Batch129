@@ -23,8 +23,6 @@ public class NestedIf02 {
             System.out.println("eskenar");
         } else if(a==b || b==c ||a==c) {
             System.out.println("ikizkenar");
-
-
         }else {
             System.out.println("cesitkenar");
         }

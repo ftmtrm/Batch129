@@ -25,8 +25,6 @@ public class C04_MDArrays {
                     System.out.println("["+ i +","+ j+"]"+" indexindeki elemanlarin toplami "+toplam);
                 }//for j
             }//for i
-
-
         }else{
 
             for (int i = 0; i < arr2.length; i++) {//kisa olan kat secildi

@@ -1,7 +1,5 @@
 package day16multidimensionalarrays;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Md03 {
     public static void main(String[] args) {
         //Bir MD Arraydeki en buyuk ve en kucuk sayinin toplamini ekrana yazdiriniz

@@ -9,7 +9,6 @@ public class C03_IfStatement {
         onun yerine "equals"methodu kullanilir.
         //Ex1: equals () ==> Buyuk kucuk harf onemser.
         equalsIgnoreCase () ==> buyuk kucuk harf onemsemez ayni kabul eder.
-
          */
         //Ex1:kullanicidan gun isimlerini aliniz ve h.ici mi h.sonu mu oldugunu yazdiran kodu olusturunuz.
         Scanner input = new Scanner(System.in);
@@ -45,8 +44,6 @@ public class C03_IfStatement {
             }else {
                 System.out.println("gecerli bir gun ismi giriniz");
         }
-
-
 
     }
 }

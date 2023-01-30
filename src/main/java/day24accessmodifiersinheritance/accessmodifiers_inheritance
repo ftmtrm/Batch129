@@ -1,0 +1,72 @@
+
+        //name herkes tarafindan bilinebilir, o yuzden "public"
+
+        //student Id okul yonetimindeki insanlar tarafindan bilinebilir, o yuzden "default"
+
+        //account number ben, esim ve cocuklarim tarafindan bilinebilir, o yuzden "protected"
+
+        //hesabimdaki para miktari sadece benim tarafimdan bilinmelidir, bu yuzden "private"
+
+        /*
+ 1)Access modifier'lar genis'den dara; public > protected > default > private
+ 2)Class'lar protected ve private olamazlar, sadece public ve default olabilirler
+ 3)Access Modifier'lar ne ise yarar?
+  Variablelara methodlara classlara ulasmayi duzenler.
+ 4)Kac tane access modifier var ?
+    public > protected > default > private
+        i) "public"ler icin hicbir sinirlama yoktur projenin her yerinden ulasilabilir
+        ii) "protected" ayni package'in icinden ya da farkli packagelarda o packagedeki cocuklar ulasabilir.
+        iii) "default" sadece ayni packageden ulasilabilir. Bu yuzden "default"larin diger adi "package private"dir
+         iv) "private"  sadece class icinden ulasilabilir, class disina cikildiginda ulasilamaz
+          v) "protected" ile "default"un farki nedir ?
+ Package disina ciktigimizda childlardan "protected"lara ulasabiliriz. "default"lara ulasamayiz.
+
+          Inheritance'in faydalari;
+                 1) Code standardında tekrar iyi değildir.
+                 2) Code değişime açık olmalıdır.Hatayı düzeltmek kolay olmalı.
+                 3) Gelişime update'e açık olmalıdır
+                 4) Code atomic yapıda olmalı.
+                 Note 1:  "parent class"(super class)(ortak ozellikleri icerir)-"child class"(sub class)(Class'a ozel ozellikleri icerir)
+                 Note 2: Bir parent class'a bağlı child class'ı belirtmek için "extends" keyword kullanırız
+                 Note 3: "public" method'lar "child class'lar tarafindan kullanilabilir"
+                         "child class'lar tarafindan kullanilabilir" demek "inherit edilebilir" demektir.
+                 Note 4: "protected" method'lar "inherit edilebilir".
+                         Cunku "protected" olan method ve variable'lar child'lar tarafindan kullanilir.
+                 Note 5: "default" method'lar object'in uretildigi class ile ayni package'de olduklari surece "inherit edilebilir".
+                         Ama default method ile object'in uretildigi class farkli package'lerde ise inherit edilemezler.
+                 Note 6: "private" method'lar "inherit edilemezler".
+                 Note 7: Java "birden fazla parent"i(multiple inheritance Java tarafindan desteklenmez) onaylamaz.
+                 Note 8: Child --> Parent --> Grand Parent --> Grand Grand Parent ... seklinde ilerleyen inheritance'lara "Multi Level Inheritance" denir.
+                 Note 9: Java'da "Object Class" tum Java Class'larinin ortak parent'idir.
+                 Note 10: Java'da Object Class haric tum class'larin parent'i vardir.
+                 Note 11: Java'da "parent" dan "child"a olan iliskilere "HAS-A Relationship" denir.
+                          Java'da "child" dan "parent"a olan iliskilere "IS-A Relationship" denir.
+                 Note 12: Java'da her class'in bir tane default constructor'i vardir.
+                          Bu default constructor class'in icinde gorunmez cunku default constructor "Object Class" icindedir.
+                          Bizim class'imiz default constructor'a ihtiyac duydugunda parent olan  "Object Class" a gider ve oradaki constructor'i kullanir.
+
+                1)Child Class'dan bir object olusturdugunuzda Constructor'lar en ustteki
+                parent class'dan baslatilarak alta dogru calistirilir.
+                 2)Child Class'daki constructordan Parent Class'taki constructor'a gidebilmek icin super() kullanilir
+                 3) parent class'ta birden fazla constructor varsa istenilen constructor super()
+               ifadesinin parentezi icine yazilan parametreler yardimiyla secilebilir.
+                 4) Ayni class icindeki constructor'lari secmek icin this() kullanilir.
+                 Ayni classda birden fazla constructor varsa istenilen constructor, this() ifadesinin parantezi icine yazilan
+                 parametreler yardimiyla secilebilir.
+                 5)"super()" ifadesini yazmak istege baglidir, yazmasaniz da Java sanki "super()" varmis gibi davranir.
+              Ama kodunuzu daha okunur kilmak icin yazmaniz tavsiye edilir.
+                 6) super() ve this() ifadeleri constructor icinde her zaman ilk satirda olmalidir.
+                 7) Bir cnstructor icinde super() ve this() ifadeleri sadece bir kere kullanilabilir.(bakiniz 6.kural)
+                 8) Inheritance'da variable'lari cagirmak icin "this(ayni classtaki variable ve methodlari cagirmak icin)"
+                 veya "super(parent class'taki variable ve methodlari cagirmak icin)" kullanilir.(parantezsiz)
+                 9) Inheritance'da object kullanarak variable cagirirsaniz object'in data tipini temsil eden class'dan
+                 variable aramaya baslayiniz.o class'ta yoksa parentlara bakiniz.
+                 10)Inheritance'da object kullanarak method cagirirsaniz object'in constructorini temsil eden class'dan
+                 method'u aramaya baslayiniz.o class'ta yoksa parentlara bakiniz.
+
+                 OOP Principle:
+                 1)inheritance
+                 2)polymorphism: method overloading + method overriding
+                 3)encapsulation
+                 4)abstraction
+

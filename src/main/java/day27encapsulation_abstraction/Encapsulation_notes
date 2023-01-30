@@ -1,0 +1,24 @@
+
+    Access modifier'i private yapinca datayi saklamis olduk buna encapsulation denir.(data hiding)
+     gerekmedikce public ya da protected yapmayiz.
+
+    ******Encapsulation yapilmis datayi okuyabilirmiyiz?*********
+    generate getter(get methodlar) encapsule edilmis (saklanmis datayi)okumaya yarar.
+    bu sekilde stdId'ye ulasabiliriz.
+    get methodlar her zaman public olur.cunku zaten saklanmis datayi okumak icin kullaniliyor.
+    get methodlarin return type'i variable'in data type'iyla ayni olur.
+    get methodlarin isimleri get+variable name seklinde olur.(getStdId,getGpa)==>naming convention
+    variable'in data type'i boolean ise get methodlar "is" ile baslar.
+    get methodlar parametre kullanmazlar.
+
+    *******Encapsulation yapilmis datalarin degeri degistirilebilir mi?
+    generate setter (set methodlar) encapsule edilmis datalarin degerlerini degistirmeye yarar.
+    set methodlar her zaman "public" olur.
+    set methodlarin return type'i her zaman void olur.
+    set methodlarin isimleri set+variable name seklinde olur.(setStdId,setGpa)==>naming convention
+    variable'in data type'i boolean ise set methodlar yine set ile baslar.
+    set methodlar variable ile ayni data type'inde parametre kullanirlar.
+
+    getter ve setter'larin ikisine birden "Java beans" denir.
+
+    */

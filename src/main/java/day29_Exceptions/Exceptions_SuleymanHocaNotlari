@@ -1,0 +1,32 @@
+
+**ClassCastException:
+Object data tipini String'in icine koymaya calisiyoruz(explicit naarowing)ile
+bir data tipini baska bir data tipine cevirmek
+her zaman mumkun degildir.eger bir non-primitive'i explicit narrowing ile non-primitive yapmaya calisirsak
+ClassCastException verir.(Run Time Exception'dir)
+birbirine donusturulemeyecek data tiplerini donusturmekte israr ederseniz Java bu exception'i atar.
+
+Throw keyword:
+Bir methodun body'si icinde istedigimiz yerde istedigimiz kosullar icin
+istedigimiz kadar exception atmamizi saglar.
+throw keyword yazildiktan sonra bir exception Class object'i olusturulur.(throw new....() seklinde)
+Exception class constructor'inin parantezi icine istediginiz exception msjini yazabilirsiniz
+(yas negatif olamaz) yazdik.
+
+Throws Throw farki nedir?(Interview Question)
+
+1)Throw method body icinde, throws ise main method parantezinden hemen sonra kullanilir.
+2)Throw method body'si icinde istenilen yerde istenildigi kadar kullanilir, throws ise method parantezinden
+ hemen sonra sadece bir kere kullanilabilir.
+3)Throw'dan sonra new keywordu ve constructor kullanilarak object olusturulur.
+throws'dan sonra sadece Exception Class ismi yazilir.
+4)Throw belli sartlar icin Exception atmada kullanilir, throws ise application' exception attiktan sonra durdurur.
+
+**FileNotException ve IO Exception Compile Time Exception'lardir.
+
+FileNotException yolun dogrulugu ve dosyanin varligi ile ilgilidir.
+IO Exception tum input output islemleri ile ilgilidir.
+input outputla alakali olusabilecek butun sorunlari halleder.
+IO Exception class FileNotFoundException'in parent'idir.
+istenirse onun yerine de kullanilabilir.
+beraber kullanilacaksa FileNotFoundException ustte IO Exception altta kullanilmalidir.

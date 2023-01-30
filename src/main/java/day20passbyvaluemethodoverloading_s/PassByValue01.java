@@ -40,5 +40,6 @@ public class PassByValue01 {
                 price=price;
         }
         return price;//more actionsdan public int'i public double'a cevirdi.
+
     }
 }

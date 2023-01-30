@@ -10,6 +10,7 @@ public class C03_Practice {
    String'de var olan her character'in sayisini ekrana yazdiriniz.
    Ornek: alacan ==> a = 3, l = 1, c = 1, n = 1
           abaa   ==> a=3  b=1
+          !!!YASIN HOCANINKI COK DAHA MANTIKLI BAK practiceAdvanced10==>Q02
   */
         Scanner input = new Scanner(System.in);
         System.out.print("Bir String giriniz :");

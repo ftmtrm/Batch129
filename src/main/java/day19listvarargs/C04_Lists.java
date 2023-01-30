@@ -27,7 +27,6 @@ public class C04_Lists {
                 nums.set(i,nums.get(i)*2);
                 break;
         }
-            nums.set(i, nums.get(i)*2);
 
         }
         System.out.println("Degistirilmis list "+nums);

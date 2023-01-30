@@ -9,7 +9,7 @@ public class Arrays05 {
         //Note3: ascending order + alphabetical order ==> Natural order
         //Note4: sort methodu array elemanlarini natural order'a gore siralar.
         //Note5: binarySearch() methodu bir elemanin bir array'de olup olmadigini kontrol etmek icin kullanilir
-        // binearySearch() methodunu kullanmadan once "sort" methodunu kullanmak zorundayiz.
+        // binarySearch() methodunu kullanmadan once "sort" methodunu kullanmak zorundayiz.
         //sort methodunu kullanmazsaniz buldugunuz sonuc guvenilir olmaz.
 
         String colors[] = new String[6];

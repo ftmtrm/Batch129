@@ -1,7 +1,14 @@
 package day25inheritance;
 
-public class C01_Memur extends C03_Muhasebe {//isci ile kardes
+public class C01_Memur extends C03_Muhasebe {//isci ile kardes "memur is a muhasebe"
     public static void main(String[] args) {
+
+        /*Osman = Obje String gösterimini döndürür. Genel olarak, toString metodu,bu Objeyi "metinsel olarak temsil eden" bir
+        String döndürür. Sonuç, bir kişinin okuması kolay,kısa ama bilgilendirici bir sunum olmalıdır.
+                Tüm child classs'lar bu yöntemi Override
+        önerilir. Object sınıfı için toString yöntemi,nesnenin bir örneği olduğu sınıfın adından, "@"
+        işareti karakterinden ve nesnenin karma kodunun işaretsiz onaltılık gösteriminden oluşan bir String
+        döndürür. Başka bir deyişle,bu yöntem o değerine eşit bir String döndürür.*/
 
 
         //personel class'i dededen aldik

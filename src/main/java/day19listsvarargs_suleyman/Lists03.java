@@ -11,7 +11,7 @@ public class Lists03 {
 
             //Example 2: SAYI TAHMIN OYUNU
             //Oyuncudan 1-10 arasi bir sayi isteyin
-            //eleinizdeki listede oyuncunun tahmin ettigi sayi varsa BINGO yazdiriniz.
+            //elinizdeki listede oyuncunun tahmin ettigi sayi varsa BINGO yazdiriniz.
             //yoksa verdigi sayiyi listenize ekleyiniz.
             // ilk BINGO'yu tamamlayana "KAZANDINIZ" yazdiriniz.
             //[5,8,2,9]==> 2 ==> [5,8,BINGO,9]

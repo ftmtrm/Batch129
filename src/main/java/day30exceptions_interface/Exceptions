@@ -1,0 +1,40 @@
+
+1)Exception olsa da olmasa da calistirmaniz gereken kodlari "finally block" icine yazariz.
+2)Database ile baglantiyi kesme isini yapan kodlar gibi kodlar herhalukarda calistirilmalidir.bu tarz kodlari
+finally block icine koyariz.
+3) try block yalniz kullanilamaz.
+try block + 1 catch block mumkundur
+try block + 1 catch block+ 1 finally block mumkundur
+try block + coklu catch block mumkundur
+try block + coklu catch block + 1 finally block mumkundur
+try block + 1 finally block mumkundur
+4) Coklu finally block mumkun degildir.
+
+        Java'da "Throwable" diye bir Class var.
+        Object Class, Throwable'in parent'idir.
+        "Throwable" ikiye ayrilir.
+            1)  "Error" (Geri donusu olmayan unexpected issues'dur. Error'lar "Handle" edilemez.)
+                    1.1) OutOfMemoryError
+                    1.2) StackOverFlowError
+                    1.3) VirtualMachineError
+                    etc.
+
+            2)  "Exception"
+                    1.1) RuntimeExceptions (UncheckedExceptions)
+                        1.1.1) AritmeticExceptions
+                        1.1.2) NullPointerException
+                        1.1.3) StringOutOfBoundException
+                        1.1.4) NumberFormatException
+                        1.1.5) ArrayIndexOutOfBoundException
+                        1.1.6) ClassCastException
+                        1.1.7) IllegalArgumentException
+
+                    1.2) CompileTimeExceptions (CheckedExceptions)
+                        1.1.1) FileNotFoundException
+                        1.1.2) IOException
+
+***1)Kendi application'iniza ozel kurallar olusturmak icin kendi "Exception class'larinizi olusturabilirsiniz.
+2)Olusturdugunuz exception class'lar bir Compile Time Exception ya da Runtime Exception olabilir.
+3)CTE olusturmak icin class'inizin parent'i Exception Class olmalidir.
+4)RTE olusturmak icin class'inizin parent'i RuntimeException Class olmalidir.
+5)Kendi olusturdugumuz exception class'lara Custom Exception Class denir.

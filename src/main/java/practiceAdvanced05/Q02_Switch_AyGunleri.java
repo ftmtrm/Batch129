@@ -31,7 +31,7 @@ public class Q02_Switch_AyGunleri {
                 System.out.println("Girdiginiz ayin gun sayisi: 30");
                 break;
             case 2:
-                if (yil%4==0 && yil%100!=0 && yil%400==0) {
+                if (yil%100==0 && yil%400==0 || yil%100!=0 && yil%4==0) {
                     System.out.println("Girdiginiz ayin gun sayisi: 29");
                 } else {
                     System.out.println("Girdiginiz ayin gun sayisi: 28");

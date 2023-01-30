@@ -24,16 +24,19 @@ public class Lists03 {
 
         for(int i=1; i<nums.size(); i++){
             minDiff = Math.min(minDiff, nums.get(i)-nums.get(i-1));
+            if(nums.get(i)-nums.get(i-1) == minDiff) {
+                System.out.println(nums.get(i-1) + " and " + nums.get(i));
+
         }
         System.out.println(minDiff);
 
-        for(int i=1; i<nums.size(); i++){//2.elemandan 1.elemani cikariyoruz
+      // for(int i=1; i<nums.size(); i++){//2.elemandan 1.elemani cikariyoruz
             // yani aslinda 2.elemandan basliyoruz o nedenle i=1 dedik.
-            if(nums.get(i)-nums.get(i-1) == minDiff) {
-                System.out.println(nums.get(i-1) + " and " + nums.get(i));
+
             }
-        }
-    }
-}
+
+            }
+
+            }
 
 

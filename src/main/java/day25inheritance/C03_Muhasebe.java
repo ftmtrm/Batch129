@@ -1,6 +1,6 @@
 package day25inheritance;
 
-public class C03_Muhasebe extends C04_Personel{//baba
+public class C03_Muhasebe extends C04_Personel{//baba olan "has a"dir ==> has a memur,isci
 
     protected int saatUcreti;
     protected String statu;

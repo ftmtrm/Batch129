@@ -16,7 +16,6 @@ public class ArrayLists01 {
               -Arrayler super fast tir
               -Arrayler memory'de cok az yer kaplar.
         */
-
         //List nasil olusturulur?
         ArrayList<Integer> ages = new ArrayList<>();
         System.out.println(ages);
