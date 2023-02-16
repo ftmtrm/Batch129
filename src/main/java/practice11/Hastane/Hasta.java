@@ -4,7 +4,7 @@ public class Hasta {
     private String isim;
     private String soyIsim;
     private int hastaID;
-    private Durum hastaDurumu;
+    private boolean hastaDurumu;
 
     public String getIsim() {
         return isim;
@@ -24,10 +24,10 @@ public class Hasta {
     public void setHastaID(int hastaID) {
         this.hastaID = hastaID;
     }
-    public Durum getHastaDurumu() {
+    public boolean getHastaDurumu() {
         return hastaDurumu;
     }
-    public void setHastaDurumu(Durum hastaDurumu) {
+    public void setHastaDurumu(boolean hastaDurumu) {
         this.hastaDurumu = hastaDurumu;
     }
 

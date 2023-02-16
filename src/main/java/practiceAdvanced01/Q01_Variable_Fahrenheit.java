@@ -15,11 +15,11 @@ public class Q01_Variable_Fahrenheit {
         double c = (f-32)*5/9;
         System.out.println("Celcius: "+c);
 
-        DecimalFormat format = new DecimalFormat("0.00");
+        DecimalFormat format = new DecimalFormat(".00");//0.00 seklinde de yazilabilir
         String formattedCelcius = format.format(c);
         System.out.println("formattedCelcius= "+ formattedCelcius);
 
-        System.out.printf("Formatli: "+ "%.2f",c);
+        System.out.printf("Formatli: "+ "%.3f",c);//virgulden sonraki 3 basamakla yazdirir.
 
 
 

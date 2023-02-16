@@ -6,8 +6,7 @@ public class Q01_Arrays_Tekrarlilari_Sil {
     //Bir array içerisindeki elementleri tekrarsız yazdıran bir kod yazınız.
 
     public static void main(String[] args) {
-        int []arr = {10,20,20,30,30,40,50,50,60};
-
+        int[] arr = {10, 20, 20, 30, 30, 40, 50, 50, 60};
         //Arrays.sort(arr)==>sirasiz olsaydi boyle yapardik
         int idx = 0;
         for (int i = 0; i < arr.length-1; i++) {
@@ -24,6 +23,28 @@ public class Q01_Arrays_Tekrarlilari_Sil {
         for (int i = 0; i < idx; i++) {
             arrTekrarsiz[i] = arr[i];
         }
-        System.out.println(Arrays.toString(arrTekrarsiz));
+                System.out.println(Arrays.toString(arrTekrarsiz));
+        //2.yol:
+//        int counter=0;
+//        for (int i = 1; i < arr.length; i++) {
+//            if (arr[i]!=arr[i - 1]) {
+//                counter++;
+//            }
+//        }
+//        int idx = 0;
+//        int brr[] = new int[counter+1];
+//        for (int i = 1; i < arr.length; i++) {
+//            if (arr[i]!=arr[i - 1]) {
+//                brr[idx++] = arr[i-1];
+//            }
+//            if(arr[i]== arr[arr.length-1]){
+//                brr[idx]= arr[arr.length-1];
+//                idx++;
+//
+//            }
+//            }
+//        System.out.println(Arrays.toString(brr));
+        }
+
     }
-}
+

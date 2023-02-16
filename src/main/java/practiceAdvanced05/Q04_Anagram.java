@@ -11,7 +11,7 @@ public class Q04_Anagram {
         * bahriyeli <> harbiyeli.* asya <> yasa.* sızlanma <> anlamsız.* Bursa Dağı <> su bardağı* kan ara <> Ankara
         */
         Scanner input = new Scanner(System.in);
-        System.out.println("Birinci String dgeri giriniz");
+        System.out.println("Birinci String degeri giriniz");
         String birinci = input.nextLine();
         System.out.println("Ikinci String dgeri giriniz");
         String ikinci = input.nextLine();

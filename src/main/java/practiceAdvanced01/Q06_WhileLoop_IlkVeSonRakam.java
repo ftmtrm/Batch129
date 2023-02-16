@@ -15,7 +15,7 @@ public class Q06_WhileLoop_IlkVeSonRakam {
         System.out.println("sonRakam = " + sonRakam);
         int ilkRakam = sayi;
 
-        while (ilkRakam>9){//while (-digi surece demek) 2 basamakli oldugu surece 10a bol diyoruz
+        while (ilkRakam>9){//while (-digi surece demek) 2 veya daha cok basamakli oldugu surece 10a bol diyoruz
 
            ilkRakam /= 10;
 

@@ -1,6 +1,5 @@
 package MyPractices.replit;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,6 +41,33 @@ public class List_elemanyerdegistirme {
             }
         }
         System.out.println(yeniList);
+
+        /*Write a program to find the common elements between two String Arrays (without case sensitivity)
+        Input1 : {John,Brad,Ange,Sofia,Emily}  Input2 : {sofia,brad,grace,emily,hazel}*/
+
+        List<String> names1 = new ArrayList<>();
+        List<String> names2 = new ArrayList<>();
+        names1.add("John");
+        names1.add("Brad");
+        names1.add("Ange");
+        names1.add("Sofia");
+        names1.add("Emily");
+
+        names2.add("sofia");
+        names2.add("brad");
+        names2.add("grace");
+        names2.add("emily");
+        names2.add("hazel");
+        String str = "";
+        for(String w:names1){
+            for(String k:names2){
+                if(w.equalsIgnoreCase(k)){
+                    str += w+" ";
+                }
+            }
+        }
+        System.out.println(str);
+
         }
 
     }

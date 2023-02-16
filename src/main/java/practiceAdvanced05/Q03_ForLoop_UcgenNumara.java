@@ -18,11 +18,7 @@ public class Q03_ForLoop_UcgenNumara {
             for (int j = i; j <7; j++) {
                 System.out.print(j + " ");
             }
-
             System.out.println();//satir kontrolu
-
         }
-
-
     }
 }

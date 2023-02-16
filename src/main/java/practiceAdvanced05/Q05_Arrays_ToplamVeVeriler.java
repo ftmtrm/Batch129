@@ -9,7 +9,7 @@ public class Q05_Arrays_ToplamVeVeriler {
             */
     public static void main(String[] args) {
         int [] arr = {4,6,5,-10,8,5,20};
-                ikilileriBul(arr,10);
+                ikilileriBul(arr,30);
 
     }
 public static void ikilileriBul(int [] arr , int toplam){

@@ -10,7 +10,6 @@ public class Q01_TextOkumaYazma {
         String satir = br.readLine();//ilk satiri aldik
         String yeniDosya = "";
 
-
         while (satir != null) {
             yeniDosya += satir + " ==> satir kelime sayisi: " + satir.split(" ").length + "\n";
             satir = br.readLine();//bir sonraki satira gecmek icin yazdik

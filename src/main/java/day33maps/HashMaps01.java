@@ -84,7 +84,7 @@ public class HashMaps01 {
         hm.replace("USA", 400000000, 500000000);
         System.out.println(hm);
 
-        //getOrDefault(): olan key'ler icin varolan value'yuyu olmayan key'ler icin ise sizin ikinci parametreye yazdiginiz degeri verir.
+        //getOrDefault(): olan key'ler icin varolan value'yu olmayan key'ler icin ise sizin ikinci parametreye yazdiginiz degeri verir.
         Integer r = hm.getOrDefault("Bhutan", 0);//Bhutan varsa onun nufusunu vercek yoksa 0 vercek
 
         //entrySet() methodu herbir entry'yi set'in icinde verir.Set'lerin methodlarini kullanabilmek icin

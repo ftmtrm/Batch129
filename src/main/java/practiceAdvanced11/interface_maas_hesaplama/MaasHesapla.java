@@ -5,6 +5,7 @@ public class MaasHesapla implements Vergi,MaasArtir {
 
     @Override
     public double yillikEkstra(int calismaYili) {
+
         return calismaYili * 100;
     }
 

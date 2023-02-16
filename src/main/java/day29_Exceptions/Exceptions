@@ -97,8 +97,7 @@ Java.io paketinin FileInputStream sinifi,
  3) available() ==> Kullanilabilir byte sayisi
  4) skip() ==> Belirtilen bayt sayisini atlamak
     icin skip () yontemini kullanabiliriz.
-    **** Javada bir dataya ulasmak istedigimizde kullaniriz bir obje olusturur
-        ruz.cesitli methodlari vardir.
+    **** Javada bir dataya ulasmak istedigimizde kullaniriz bir obje olustururuz.cesitli methodlari vardir.
         read () task'teki datalari okur ve getirir. okuyacak hicbir data kalmadiginda
         -1 dondurur.
         skip () methodu: belirli bir kismi atlayip kalan datalari dondurur.

@@ -28,7 +28,7 @@ String str ="$1 $12 €34 €56 $45 €78";
         System.out.println("dolarToplam = " + dolarToplam);
         System.out.println("euroToplam = " + euroToplam);
 
-        // dolar ve euro isareti yerine \\D kullanabiliriz.sayi disindaki sil demis oluruz
+        // dolar ve euro isareti yerine \\D kullanabiliriz.sayi disindaki herseyi sil demis oluruz
 
     }
 }

@@ -47,11 +47,9 @@ public class OkulMain {
             } catch (Exception exception) {
                 System.out.println(" 8-15 araliginda bir SAYI giriniz.");
                 continue;
-
             }
            // ogrenciListesi.add(ogrenci);//buna gerek kalmiyor addOgrenciTolist methodu olusturunca
             okul.addOgrenciToList(ogrenci);
-
         }
         System.out.println(okul);
     }

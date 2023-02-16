@@ -3,7 +3,7 @@ package practice06;
 public class Butce {
     // Tum aile uyelerinin birikiminin bulundugu ortak ihtiyaclar icin
     // kullanildigi bir butce ile kisisel harcamalarin yapildigi
-    // harclik'larin oldugu basit bir ev bütçesi kodu yazınız.
+    // harcliklarin oldugu basit bir ev bütçesi kodu yazınız.
     public static int butce;
     public int harclik;
     public void harclikAl(int alinanHarclik){
@@ -11,12 +11,15 @@ public class Butce {
         harclik+=alinanHarclik;
     }
     public void butcedenHarca(int harcanacakPara){
+
         butce-=harcanacakPara;
     }
     public void harclikHarca(int harclikHarcamasi){
+
         harclik-=harclikHarcamasi;
     }
     public void maasAl(int alinanMaas){
+
         butce+=alinanMaas;
     }
 }

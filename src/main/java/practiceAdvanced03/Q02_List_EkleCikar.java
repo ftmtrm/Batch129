@@ -36,7 +36,7 @@ public class Q02_List_EkleCikar {
             } else if (komut.equalsIgnoreCase("remove")) {
                 System.out.println("Silmek istediginiz sayiyi giriniz");
                 Integer silinecekSayi = input.nextInt();
-                //Objectle calisrsa girdigimiz objeyi siler int olarak girersek onun indexinden siler
+                //Objectle calisirsa girdigimiz objeyi siler int olarak girersek onun indexinden siler
                 list.remove(silinecekSayi);
 
             } else if (komut.equalsIgnoreCase("break")) {

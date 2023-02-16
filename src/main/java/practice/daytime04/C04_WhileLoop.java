@@ -21,10 +21,11 @@ public class C04_WhileLoop {
             toplam += sayi;
             sayac++;
         }
-        if (toplam>500){
-            System.out.println(sayac+" adet sayi girdiniz.Toplami " + toplam);
-        }else
+        if (toplam>500 || sayac>10){
             System.out.println("Bu kadar sayi yeter."+sayac+"adet sayi girdiniz.Toplam"+toplam);
+        }else
+            System.out.println(sayac+" adet sayi girdiniz.Toplami " + toplam);
+
         }
 
     }

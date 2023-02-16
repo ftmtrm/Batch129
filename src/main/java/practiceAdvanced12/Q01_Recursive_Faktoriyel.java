@@ -3,6 +3,7 @@ package practiceAdvanced12;
 public class Q01_Recursive_Faktoriyel {
     //Faktoriyel hesaplayan bir method yazınız.(Loop kullanmayınız.)
     public static void main(String[] args) {
+
         System.out.println(faktoriyel(5));
     }
     public static int faktoriyel(int sayi) {

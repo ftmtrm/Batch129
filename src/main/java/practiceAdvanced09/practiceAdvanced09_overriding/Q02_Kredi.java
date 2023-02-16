@@ -2,7 +2,7 @@ package practiceAdvanced09.practiceAdvanced09_overriding;
 
 public class Q02_Kredi {
     //Bir bankadan kredi alan müşterileri kredi türlerine göre objeler oluşturarak kaydeden bir kod yazınız.
-     //Emekli: %12 standart faiz, İşçi: %15 işçi oranı, Memur: %10 memur oranı
+     //Emekli: %12 standart faiz, İşçi: %15 , Memur: %10
 
     public static void main(String[] args) {
 
@@ -14,7 +14,5 @@ public class Q02_Kredi {
 
         Isci isci1 = new Isci();
         System.out.println(isci1.faizHesapla(125));
-
-
     }
 }

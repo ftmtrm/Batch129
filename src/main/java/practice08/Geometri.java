@@ -5,6 +5,7 @@ public class Geometri {
      */
     public int sayi=10;
     public double hacimHesapla(int a, int b) {
+
         return a*a*b;
     }
 

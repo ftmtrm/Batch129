@@ -31,40 +31,30 @@ public class Online_Alisveris {
         urunFiyatlari.add(10.0);
         urunFiyatlari.add(500.0);
         System.out.println(urunListesi);
-
         musteriSecim();
     }//main
-
     private static void musteriSecim() {
-
         System.out.println("Lutfen sectiginiz urunun kodunu giriniz");
         int secim=input.nextInt();
         System.out.println("Lutfen sectiginiz urunden kac adet istediginizi giriniz");
         int adet=input.nextInt();
-
-        double urunTutari=adet*urunFiyatlari.get(secim-1);
+        double urunTutari = adet*urunFiyatlari.get(secim-1);
         toplamOdeme+=urunTutari;
         System.out.println("Devam ise 1 \nOdeme icin 2 seciniz");
         int devamMi=input.nextInt();
-
         if(devamMi==1){
             musteriSecim();//recursive Method
         }else
             odeme();
-
     }//musterSecim()
-
     private static void odeme() {
         LocalDate kurulusGunumuz= LocalDate.of(2023,02,10);
-
         LocalDate date=LocalDate.now();
 
         if(date.isEqual(kurulusGunumuz)){
             System.out.println("Bugun bizim kurulus gunumuz.Borcunuz yoktur****");
         }else
             System.out.println("Yine bekleriz Odemeniz: "+toplamOdeme+"$");
-
-
     }//odeme()
 }
 

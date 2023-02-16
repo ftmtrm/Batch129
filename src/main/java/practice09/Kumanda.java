@@ -12,9 +12,7 @@ public class Kumanda {
         this.yukseklik = yukseklik;
         this.ekranBuyuklugu = ekranBuyuklugu;
     }//const
-
         // kanalDegistirme()
-
     public  double kanalDegistirme(int kanal){
         switch(kanal){
             case 1:
@@ -28,6 +26,7 @@ public class Kumanda {
 
     }
     public void gucDugmesi(){
+
         this.guc =!guc;
     }
 

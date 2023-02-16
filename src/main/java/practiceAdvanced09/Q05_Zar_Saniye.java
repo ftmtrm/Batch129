@@ -7,12 +7,13 @@ public class Q05_Zar_Saniye {
     /*İki zar atıp sonucunu atıldığı saniyeye göre 2 veya 5 ile çarpıp
  bilgisayarın puanıyla karşılaştıran bir method yazınız.
 Zarın atıldığı saniye 5'in katı ise zar sayısı 5 ile çarpılıp puana eklenecek,
-çiftse zar sayısı iki ile çarpılıp puana kelenecek,tekse zar sayısı puana eklenecek.*/
+çiftse zar sayısı iki ile çarpılıp puana eklenecek,tekse zar sayısı puana eklenecek.*/
     public static void main(String[] args) {
+
         zarAt();
     }
 
-    static int saniyeOyucu;
+    static int saniyeOyuncu;
     static int puanOyuncu;
     static int sayac;
     static int puanBilgisayar;
@@ -26,14 +27,14 @@ Zarın atıldığı saniye 5'in katı ise zar sayısı 5 ile çarpılıp puana e
 
             int zarOyuncu = (int) (Math.random() * 6) + 1;
             System.out.println("zarOyuncu = " + zarOyuncu);
-            saniyeOyucu = LocalTime.now().getSecond();
-            System.out.println("saniyeOyucu = " + saniyeOyucu);
+            saniyeOyuncu = LocalTime.now().getSecond();
+            System.out.println("saniyeOyuncu = " + saniyeOyuncu);
 
-            if (saniyeOyucu % 5 == 0) {
+            if (saniyeOyuncu % 5 == 0) {
 
                 puanOyuncu += zarOyuncu * 5;
 
-            } else if (saniyeOyucu % 2 == 0) {
+            } else if (saniyeOyuncu % 2 == 0) {
                 puanOyuncu += zarOyuncu * 2;
             } else {
                 puanOyuncu += zarOyuncu;
@@ -46,7 +47,7 @@ Zarın atıldığı saniye 5'in katı ise zar sayısı 5 ile çarpılıp puana e
         sayac++;
         int zarBilgisayar = (int) (Math.random() * 6) + 1;
         System.out.println("zarBilgisayar = " + zarBilgisayar);
-        int saniyeBilgisayar = saniyeOyucu + 1;
+        int saniyeBilgisayar = saniyeOyuncu + 1;
         System.out.println("saniyeBilgisayar = " + saniyeBilgisayar);
 
         if (saniyeBilgisayar % 5 == 0) {

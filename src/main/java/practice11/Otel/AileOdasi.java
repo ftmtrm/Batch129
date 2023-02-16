@@ -11,6 +11,7 @@ public class AileOdasi extends Otel{
     }
     @Override
     public void kahvalti() {
+
         System.out.println("Kahvalti serpme kahvalti");
     }
 }

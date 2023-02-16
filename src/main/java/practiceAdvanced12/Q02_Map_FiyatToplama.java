@@ -15,7 +15,6 @@ public class Q02_Map_FiyatToplama {
         urunlerFiyatlar.put("Kazak",24.99);
         urunlerFiyatlar.put("Kravat",19.99);
         System.out.println(fiyatToplami(urunlerFiyatlar));
-
     }
     public static double fiyatToplami(Map<String,Double> map){
         System.out.println("Urunler ve fiyatlari: "+map);

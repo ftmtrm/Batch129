@@ -7,9 +7,10 @@ public class Q01_Recursive_100den1e {
 
     }
     public static void sayilariYazdir(char ch){
-        if(ch>='d'/'d')
-        System.out.print((int)ch+" ");
-        ch--;
-        sayilariYazdir(ch);//recursive yaptik (surekli methodun kendini cagirmasi) loop gibi
+        if(ch>='d'/'d'&& ch<='d') {
+            System.out.print((int) ch + " ");
+            ch--;
+            sayilariYazdir(ch);//recursive yaptik (surekli methodun kendini cagirmasi) loop gibi
+        }
     }
 }

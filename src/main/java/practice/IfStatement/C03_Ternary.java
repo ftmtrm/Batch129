@@ -20,13 +20,10 @@ public class C03_Ternary {
         if (sayi > 0) {
             if(sifirdanBuyukUcBas){
                 System.out.println("3 Basamakli sayi");
-
             }else if(sifirdanBuyukUcBasOlmayanCift){
                 System.out.println("3 Basamakli olmayan pozitif cift sayi");
-
             }else
                 System.out.println("3 Basamakli olmayan pozitif tek sayi");
-
         } else {//negatif sayilar icin burasi calisir
             System.out.println("Lutfen pozitif bir tamsayi giriniz");
         }//if body

@@ -19,8 +19,6 @@ public class Q03_RastgeleSifreOlusturma {
             sifre += karakterler.charAt(rastgeleIndex);
             sayac++;
         }
-
         System.out.println("sifre=" + sifre);
-
     }
 }

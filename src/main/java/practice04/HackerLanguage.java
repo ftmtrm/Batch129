@@ -23,7 +23,7 @@ public class HackerLanguage {
         System.out.println("Lutfen bir cumle giriniz");
         String cumle = input.nextLine().toLowerCase();
         String arr[] = new String[cumle.length()];
-        System.out.println(Arrays.toString(arr));
+
         for (int i = 0; i < cumle.length(); i++) {
             arr[i] = cumle.substring(i, i + 1);
         }

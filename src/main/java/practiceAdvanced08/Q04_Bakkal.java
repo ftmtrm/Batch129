@@ -29,7 +29,6 @@ public class Q04_Bakkal {
             gun++;
         }
 
-
         DecimalFormat decimalFormat = new DecimalFormat("0.00");
 
         System.out.println("Günlük Kazançlar: "+gunlukKazanclar);
@@ -40,9 +39,8 @@ public class Q04_Bakkal {
         System.out.println("Ortalama Gelirli Günler: "+ortlamaGunler());
 
     }
-
-
     static double ortalamGelir(){
+
         return toplamKazanc/7;
     }
 

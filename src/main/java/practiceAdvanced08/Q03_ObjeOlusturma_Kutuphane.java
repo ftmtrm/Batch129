@@ -11,9 +11,7 @@ public class Q03_ObjeOlusturma_Kutuphane {
         obj1.kitapBilgileri();
         Kutuphane obj2 = new Kutuphane("Kirlangic Cigligi","Ahmet Umit",400);
         obj2.sayfaSayisi=405;
+//        System.out.println(obj2);
         obj2.kitapBilgileri();
-
-
-
     }
 }

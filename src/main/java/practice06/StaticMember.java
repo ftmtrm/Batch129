@@ -9,6 +9,7 @@ public class StaticMember {
         y++;
     }//const
     public static int karesiniAl(){
+
         return x*x;
     }
     public static void main(String[] args) {

@@ -7,6 +7,7 @@ public abstract class Otel {//child'lari bazi methodlari kullanmaya zorlamak ici
     public abstract void kahvalti();
 
     public int wifi(int kisiSayisi){ //concrete method body'li isteyen kullanir
+
         return kisiSayisi*3;
     }
 }

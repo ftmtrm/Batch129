@@ -9,9 +9,8 @@ input : ade1r4d3 output : 8    Use Character.isDigit()              Integer.valu
         int sum = 0;
         for (int i = 0; i < str.length(); i++) {
             if (Character.isDigit(str.charAt(i))) {
-                sum += Character.getNumericValue(str.charAt(i));
+                sum += Integer.valueOf(""+(str.charAt(i)));
             }
-
         } System.out.println(sum);
 
         System.out.println();

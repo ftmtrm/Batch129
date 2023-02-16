@@ -36,8 +36,6 @@ public class Q03_DoWhile_TahminOyunu {
 
             }while (sayi != rastgeleSayi) ;
 
-
-
         }
 
     }

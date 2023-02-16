@@ -25,7 +25,7 @@ public class Q02_Palindrome_StringBuilder {
         //stringin mutable halidir.
         // methodlarla stringin orjinalini degistirebilecegiz
         System.out.println("stb="+ stb);
-        String str2Reverse = stb.reverse().toString();
+        String str2Reverse = String.valueOf(stb.reverse());//stb.reverse().toString() de kullaniliyor.
         System.out.println("Reverse() sonrasi stb: "+stb);
         if(str2.equals(str2Reverse)) {
             System.out.println("Palindrome");

@@ -14,7 +14,7 @@ public class C01_Varargs {
         Evet, "Varargs" dan önce birçok normal parametre kullanabilirsiniz.
 
         7)Bir metotta birden fazla "Varargs" parametresi kullanabilir miyim?
-                Hayir .Cunku sondaki Varargs'a unreachable code olur
+                Hayir .Cunku sondaki Varargs unreachable code olur
                 */
 
     public static void main(String[] args) {

@@ -14,7 +14,7 @@ public class Q06_MultidimensionalArray_Toplam {
 
         for(int i=0; i<arr.length;i++){
             for (int j = 0; j <arr[i].length ; j++) {
-                brr[i] = brr[i] + arr[i][j];
+                brr[i] += arr[i][j];
             }
         }
         System.out.println(Arrays.toString(brr));

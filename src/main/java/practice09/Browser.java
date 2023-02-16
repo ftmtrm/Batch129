@@ -8,16 +8,19 @@ public class Browser {
             edge.search();
             edge.sifreKaydetme();
             edge.get();
-
+            Safari safari = new Safari();
+            safari.sifreKaydetme();
             Edge edge2 = new Edge(adresCubugu);
             System.out.println(edge2.adresCubugu);
         }
         public void get(){
 
-                System.out.println("Browserlar Web sayfasina gider");
+                System.out.println(
+                        "Browserlar Web sayfasina gider");
         }
         public void search(){
-            System.out.println("Browserlar aratma yapar");
+
+                System.out.println("Browserlar aratma yapar");
         }
         public void sifreKaydetme(){
 

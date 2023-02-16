@@ -16,14 +16,16 @@ public interface AC {
   1)Interface'lerden object olusturulamaz cunku interface'lerin constructor'i yoktur.
   2)Abstract class'lardan object olusturulamaz constructorlari vardir ama constructor object olusturmada
   kullanilamaz.
-  3)Interface'lerin constructorlari olmadigindan collection olustururken interface isimleri "new" keyword'un son
+  3)Interface'lerin constructorlari olmadigindan collection olustururken interface isimleri "new" keyword'un
   den sonra kullanilamaz.
   4)class --> class ==> extends
     class --> interface ==> implements
     interface --> interface ==> extends
     interface --> class ==> Bu mumkun degildir. Bir interface bir class'in child'i olamaz.
     */
-    void cool();//methodun return type'i olmalidir ondan void silinemez.
+
+ void cool();
+   //methodun return type'i olmalidir ondan void silinemez.
     void run();
 
      int price = 2000;//interface'deki variable'lar public static final'dir.o nedenle yazmayabiliriz.

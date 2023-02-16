@@ -26,14 +26,14 @@ aynisi veya o data type'inin parent'i olarak secilir.
 
       11)Final kelimesini "Variable"larda kullanabilirsiniz.
                     ->final variable ise
-                    i) mutlaka değer atanmalıdır
+                    i) mutlaka değer atanmalıdır(mutlaka initialize edilmelidirler)
                     ii) ilk atanan değer değiştirilemez
 
       12)Final kelimesini "Method" larda kullanabilirsiniz.
                      ->method final ise;
                       i)methodun body'si değiştirilemez
                       ii)method body'si değiştirilemeyince override yapmak mümkün olmaz
-
+                      iii)Garbage Collector datalari imha etmeden once calistirilir.
       13)Final kelimesini "Class"larda kullanabilirsiniz.
                      ->class final ise;
                        i)o class'ın child'ı olamaz

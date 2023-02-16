@@ -23,12 +23,15 @@ public abstract class TSE {
         abstract void hijyenikOlma();
 
         void odunAtesindePiser() {
+
             System.out.println("TSE odun atesinde piser");
         }
         void undanYapilir() {
+
             System.out.println("TSE undan yapilir");
         }
         void fiyat (){
+
             System.out.println("15 TL");
         }
 

@@ -10,6 +10,7 @@ public class KralDairesi extends Otel{
     }
     @Override
     public void kahvalti() {
+
         System.out.println("Kahvalti yataga gelir");
     }
 

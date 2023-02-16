@@ -27,9 +27,9 @@ public class Q04_Manav {//RECURSIVE METHOD
 
         System.out.println("urunlistesi = " + urunlistesi);
         System.out.println("toplamOdeme = " + toplamOdeme);
-        musteriSeccimi();
+        musteriSecimi();
     }
-    public static void musteriSeccimi() {
+    public static void musteriSecimi() {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ürün kodunu giriniz");
@@ -46,7 +46,7 @@ public class Q04_Manav {//RECURSIVE METHOD
         String karar = scanner.next();
 
         if (karar.equalsIgnoreCase("d")) {
-            musteriSeccimi();
+            musteriSecimi();
         } else {
             System.out.println("toplamOdeme = " + toplamOdeme);
             System.out.println("Güle güle, yine bekleriz...");

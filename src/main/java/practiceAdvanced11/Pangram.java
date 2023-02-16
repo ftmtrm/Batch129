@@ -4,13 +4,12 @@ public class Pangram {
     /*
     Bir cümlenin pangram olup olamadığını kontrol eden bir kod yazınız.
     Not: Pangram, bir dilin alfabesi içerisindeki tüm harfleri içeren anlamlı cümledir.
-    TR: Pijamalı hasta yağız şoföre çabucak güvendi.
+    TR:  Pijamalı hasta yağız şoföre çabucak güvendi.
     ENG: The quick brown fox jumps over the lazy dog.(ascii ile)
     */
     public static void main(String[] args) {
         System.out.println(isPangram("Pijamalı hasta yağız şoföre çabucak güvendi"));
         System.out.println(isPangram2("The quick brown fox jumps over the lazy dog"));
-
     }
     //1.yol:
     public static boolean isPangram(String str){
@@ -25,7 +24,6 @@ public class Pangram {
         }
         return sonuc;
     }
-
 //2.yol:
     public static boolean isPangram2(String str){
         str.replaceAll(" ","").toLowerCase();
@@ -33,9 +31,7 @@ public class Pangram {
             if(str.indexOf(ch)==-1){
                 return false;
             }
-
         }
         return true;
     }
-
 }

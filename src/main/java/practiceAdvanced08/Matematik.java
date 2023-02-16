@@ -9,6 +9,7 @@ public class Matematik {
         return sonuc;
     }
     public double karesiniAl(double x){
+
         return x*x;
     }
 }

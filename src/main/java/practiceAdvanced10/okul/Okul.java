@@ -20,30 +20,37 @@ public class Okul {//pojo class her bir ogrenci objesi data type'dir.
     }
 
     public String getOkulAdi() {
+
         return okulAdi;
     }
 
     public void setOkulAdi(String okulAdi) {
+
         this.okulAdi = okulAdi;
     }
 
     public int getMaxOgrenciSayisi() {
+
         return maxOgrenciSayisi;
     }
 
     public void setMaxOgrenciSayisi(int maxOgrenciSayisi) {
+
         this.maxOgrenciSayisi = maxOgrenciSayisi;
     }
 
     public List<Ogrenci> getOgrenciListesi() {
+
         return ogrenciListesi;
     }
 
     public void setOgrenciListesi(List<Ogrenci> ogrenciListesi) {
+
         this.ogrenciListesi = ogrenciListesi;
     }
 
     public void addOgrenciToList (Ogrenci ogrenci){//direkt liste eklemis oluruz
+
         ogrenciListesi.add(ogrenci);
     }
 

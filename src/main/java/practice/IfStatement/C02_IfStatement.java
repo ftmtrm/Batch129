@@ -11,7 +11,7 @@ public class C02_IfStatement {
         System.out.println("Lutfen toplama yapmak icin 1\n cikarma yapmak icin " +
                 "2\n carpma yapmak icin 3 \n bolme yapmak icin 4 \n giriniz");
         int islem =input.nextInt();
-        System.out.println("Lutfen iki tamsayi giriniz");
+        System.out.println("Lutfen iki sayi giriniz");
         double num1 =input.nextDouble();
         double num2= input.nextDouble();
 

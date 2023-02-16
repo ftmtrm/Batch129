@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class C01_NestedLoop {
     public static void main(String[] args) {
 
-
-
     /*Asagidaki sekli cizdiren kodu yaziniz.govde sabit sayi 5 olsun
     ^
     ^^

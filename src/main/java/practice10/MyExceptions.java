@@ -9,6 +9,7 @@ public class MyExceptions extends Exceptions{
     }
 
     public MyExceptions() {
+
         super(str);
     }
 }

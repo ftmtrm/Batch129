@@ -23,7 +23,6 @@ public class MiladiTakvim {
 
             if(miladiTakvim.isLeapYear(year)){
                 System.out.println("Bu yil artik yil");
-
             }else
                 System.out.println("Bu yil artik yil degil");
 

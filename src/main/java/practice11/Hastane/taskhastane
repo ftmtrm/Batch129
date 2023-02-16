@@ -20,15 +20,11 @@
           private String soyIsim;
           private int hastaID;
           private Durum hastaDurumu;
-      5)Asagidaki variablelari getter ve setter
-           lari ile birlikte olusturunuz Doktor
+      5)Asagidaki variablelari getter ve setterlari ile birlikte olusturunuz Doktor
            classinda
             private String isim;
             private String soyIsim;
             private String unvan;
-      6) instance variablelari
-           olusturabilirsiniz ve onlar icin getter ve
-           setter lar olusturunuz
-           Hastane classiniz sizin VeriBankasi classinizi
-           extend etmelidir burada Inheritance
-           kullaniniz
+      6) instance variablelari olusturabilirsiniz ve onlar icin getter ve setter lar olusturunuz
+      7) Hastane classiniz sizin VeriBankasi classinizi extend etmelidir burada Inheritance
+kullaniniz
