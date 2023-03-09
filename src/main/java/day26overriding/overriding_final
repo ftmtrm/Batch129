@@ -23,7 +23,6 @@ aynisi veya o data type'inin parent'i olarak secilir.
       Cunku return type ya ayni olur veya parent'tan secilir.ama Java bir wrapper class'i digerinin class'i parenti yapmadigindan
       parent'tan secme ihtimali yoktur' geriye sadece aynisi olma ihtimali kalir.
       10) Method'un return type'i void ise Overriding yaparken return type degistirilemez.
-
       11)Final kelimesini "Variable"larda kullanabilirsiniz.
                     ->final variable ise
                     i) mutlaka değer atanmalıdır(mutlaka initialize edilmelidirler)
@@ -41,7 +40,7 @@ aynisi veya o data type'inin parent'i olarak secilir.
       15) "Override" yapabimek icin "inheritance" sarttir. Baska bir ifade ile Parent child iliskisi sarttir.
 inheritance prerequisttir
       16) Method overlaoding Compile Time Polymorphism'dir.
-      Method Overloading "Run Time Polymorphism"dir.(coksekilli)
+      Method Overriding "Run Time Polymorphism"dir.(coksekilli)
       Polymorphism:ayni method farkli gorunumlere sahip demektir.
 
       17) Method Overloading "static Polymorphism" dir, Method Overriding "dynamic Polymorphism" dir.

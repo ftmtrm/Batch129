@@ -67,7 +67,7 @@ public static void main(String[] args) {
         boolean isFail;
         System.out.println("Yeni islem icin 1, cikis icin herhangi bir sayi giriniz");
         int choice = inp.nextInt();
-        if (choice == 1)       //if'00ten sonra sadece bir satir yazcaksak
+        if (choice == 1)       //if'ten sonra sadece bir satir yazcaksak
             // yani sadece bir islem yapcaksak curly braces kullanilmasa da olur.
             isFail = true;
         else

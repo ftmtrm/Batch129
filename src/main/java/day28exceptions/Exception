@@ -68,4 +68,4 @@ StringOutOfBoundException ve ArrayIndexOutOfBoundException'da hatanin sebebini s
 * ArrayIndexOutOfBoundException: Array'lerde olmayan bir index kullanildiginda Java bu exception'i atar.
 * NullPointerException:String'in degeri null olacaksa method kullaniminda dikkat etmek gerekir yoksa Java
 bu exception atabilir.(mesela lenght,contains gibi methodlari kullanamayiz).
-*****IOException:butun exception'larin parent'idir.
+*****IOException:compile time exception'larin parent'idir.

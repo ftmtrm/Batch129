@@ -1,6 +1,5 @@
 package ProjectStudies.BookStore;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -11,6 +10,7 @@ public class Islemler {
         static List<Defter> defterListesi = new ArrayList<>();
         static Scanner scan = new Scanner(System.in);
         static String kitapDefterSecimi;
+        public static int kitapdefterID=100;
         public static final String R = "\u001B[31m";
         public static final String G = "\u001B[32m";
         public static final String Y = "\u001B[33m";
@@ -92,10 +92,10 @@ public class Islemler {
                 System.out.println();
                 System.out.print("Silinecek kitap ID nosunu giriniz : ");
 
-                String silinecekKitapID=scan.next();
+                int silinecekKitapID=scan.nextInt();
 
                 for (KitapDefter k:kitapListesi) {
-                    if (k.getKitapdefterID().equals(silinecekKitapID)){
+                    if (k.getKitapdefterID()==silinecekKitapID){
                         System.out.println("Silinen kitap : "+k.getKitapdefterID());
                         kitapListesi.remove(k);
                         flag=false;
@@ -107,9 +107,9 @@ public class Islemler {
                 }
             }else{
                 System.out.print("silinecek defterin ID nosunu giriniz : ");
-                String silinecekdefterIDNo=scan.next();
+                int silinecekdefterIDNo=scan.nextInt();
                 for (KitapDefter k: defterListesi) {
-                    if (k.getKitapdefterID().equalsIgnoreCase(silinecekdefterIDNo)){
+                    if (k.getKitapdefterID()==silinecekdefterIDNo){
                         System.out.println("Silinen defter : "+k.getKitapdefterID());
                         defterListesi.remove(k);
                         flag=false;
@@ -172,10 +172,10 @@ public class Islemler {
                 System.out.println();
                 System.out.print("Aradıgınız kitabin ID Nosunu giriniz : ");
 
-                String arananIDNo=scan.next();
+                int arananIDNo=scan.nextInt();
 
                 for (KitapDefter k:kitapListesi) {
-                    if (k.getKitapdefterID().equals(arananIDNo)){
+                    if (k.getKitapdefterID()==arananIDNo){
                         System.out.println("Aradıgınız kitap : "+k.getKitapdefterID());
                         flag=false;
                     }
@@ -185,9 +185,9 @@ public class Islemler {
                 }
             }else{
                 System.out.print("Aradıgınız defterin ID Nosunu giriniz : ");
-                String arananIDNo=scan.next();
+                int arananIDNo=scan.nextInt();
                 for (KitapDefter k: defterListesi) {
-                    if (k.getKitapdefterID().equalsIgnoreCase(arananIDNo)){
+                    if (k.getKitapdefterID()==arananIDNo){
                         System.out.println("Aradıgınız defter : "+k.getKitapdefterID());
                         flag=false;
                     }
@@ -199,9 +199,6 @@ public class Islemler {
         }
         private static void ekle() {
             System.out.println(R+"   ***   " + kitapDefterSecimi + " ekleme sayfası   ***"+B);
-            System.out.print("ID No giriniz : ");
-            scan.nextLine();
-            String idNo = scan.nextLine();
             System.out.print("Birim fiyat giriniz : ");
             int birimFiyat = scan.nextInt();
             System.out.print("Stok sayisi giriniz : ");
@@ -213,16 +210,18 @@ public class Islemler {
                 System.out.print("Yazar adi giriniz : ");
                 String yazarAdi = scan.nextLine();
 
-                Kitap kitap = new Kitap(idNo,birimFiyat,stok,yayinevi,yazarAdi);
+                Kitap kitap = new Kitap(kitapdefterID,birimFiyat,stok,yayinevi,yazarAdi);
                 kitapListesi.add(kitap);
+                kitapdefterID++;
 
             } else {
                 System.out.print("Marka giriniz : ");
                 String marka = scan.next();
                 System.out.print("Yaprak sayisi giriniz : ");
                 int yaprakSayisi = scan.nextInt();
-                Defter defter = new Defter(idNo, birimFiyat, stok, marka, yaprakSayisi);
+                Defter defter = new Defter(kitapdefterID, birimFiyat, stok, marka, yaprakSayisi);
                 defterListesi.add(defter);
+                kitapdefterID++;
             }
         }
     }

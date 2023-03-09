@@ -10,6 +10,7 @@ public class A01_Math extends A04_Lessons {
     /*2*/this();
         //bu classi kullan demek ayni classin icinde diger const.i calistirmak icin kullanilir.
         /*13*/ System.out.println("Parametreli Math Constructor");
+
     }
 
 }

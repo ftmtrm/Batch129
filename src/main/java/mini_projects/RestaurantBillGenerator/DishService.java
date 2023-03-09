@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DishService {//4-Dish ile ilgili islemler
     //5-yiyecekleri listeye ekleme
-    private List<Dish> dishList = new ArrayList<>();
+     private List<Dish> dishList = new ArrayList<>();
     public DishService(){
         Dish dish1 = new Dish(100,"Adana Kebabi",220.99);
         Dish dish2=new Dish(101,"Urfa Kebabı",200.0);
@@ -41,6 +41,20 @@ public class DishService {//4-Dish ile ilgili islemler
         }
 
     }
+    //12-Code ile dish bulma
+    public Dish findByDishCode(int code){
+        if(code==0){
+            System.out.println("Anamenuye yonlendiriliyorsunuz");
+        }else {
+            for(Dish dish: this.dishList){
+                if(dish.getCode()==code){
+                    return dish;
+                }
+            }
+            System.out.println("Aradiginiz urun bulunamadi");
+        }
 
+        return null;
+    }
 
 }

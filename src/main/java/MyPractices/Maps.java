@@ -30,9 +30,9 @@ public class Maps {
             selectOption();
         }
         private static void selectOption() {
-            System.out.println("yapmak istediginiz islemi giriniz :\n0:islemi sonlandir\n" +
-                    "1:kullanici ekle\n2:kullanici bilgisi alma\n3:kullanici silme");
-            int secim = sc.nextInt();//nextLine hata verir.Ã§Ã¼nkÃ¼ bir Ã¼st satÄ±r println deÄŸil print olduÄŸu iÃ§in tum satÄ±rÄ± alÄ±r.
+            System.out.println("Yapmak istediginiz islemi giriniz :\n0:Islemi sonlandir\n" +
+                    "1:Kullanici ekle\n2:Kullanici bilgisi alma\n3:Kullanici silme");
+            int secim = sc.nextInt();//nextLine hata verir.Cunku bir ust satir println degil print oldugu icin tum satirlari alir.
             switch (secim) {
                 case 0:
                     cikis();
@@ -47,33 +47,34 @@ public class Maps {
                     removeInfo();
                     break;
                 default:
-                    System.out.println("yanlis giris yaptiniz. Tekrar deneyiniz");
+                    System.out.println("Yanlis giris yaptiniz. Tekrar deneyiniz");
                     selectOption();
                     break;
             }
         }
         private static void cikis() {
-            System.out.println("cikis isleminiz yapildi. haydi selametle....");
+
+            System.out.println("Cikis isleminiz yapildi...");
         }
 
         private static void removeInfo() {
-            System.out.print("silinecek tc yi giriniz :");
+            System.out.print("Silinecek tc yi giriniz :");
             String silinecekTc = sc.next();//nextLine hata verir.cunku bir ust satir println degil print oldugu icin tum satiri alir.
             if (person.containsKey(silinecekTc)) {//1. adim
                 person.remove(silinecekTc);
-                System.out.println("girilen tc gayet basarili bi sekilde silindi"+person);//silinecekTc nin tum bilgilerini person map'inden getirdik.(map.get(key);tum degerleri value getirir.)
+                System.out.println("Girilen tc basarili bi sekilde silindi"+person);//silinecekTc nin tum bilgilerini person map'inden getirdik.(map.get(key);tum degerleri value getirir.)
 
-            } else {System.out.println("aradiginiz tc'ye sahip sahis yoktur.\n Lutfen tekrar deneyiniz");//2. adim
+            } else {System.out.println("Aradiginiz tc'ye sahip sahis yoktur.\n Lutfen tekrar deneyiniz");//2. adim
                 removeInfo();}//kullanici, silinenTc ye sahip sahis olmadigi  icin tekrar tc girisi yapacak
             selectOption();
         }
 
         private static void getInfo() {
-            System.out.print("aradiginiz tc yi giriniz :");
+            System.out.print("Aradiginiz tc yi giriniz :");
             String arananTc = sc.next();//nextLine hata verir.
             if (person.containsKey(arananTc)) {
                 System.out.println(person.get(arananTc));//arananTc nin tum bilgilerini person map'inden getirdik.(map.get(key);tum degerleri value getirir.)
-            } else {System.out.println("aradiginiz tc sahip sahis yoktur.\n tekrar deneyin");
+            } else {System.out.println("Aradiginiz tc'ye sahip sahis yoktur.\n tekrar deneyin");
                 getInfo();}//kullanici, arananTc ye sahip sahis olmadigi  icin tekrar tc girisi yapacak //kullanici var olmayan tc girdigi icin tekrar tc girisi icin getInfo() metoda geri gonderdik.
             selectOption();
         }
@@ -82,12 +83,12 @@ public class Maps {
 
         private static void saveInfo() {
 
-            System.out.print("4 haneli tc nizi girin : ");
+            System.out.print("4 haneli tc'nizi giriniz : ");
             String tc = sc.next();//nextLine hata verir.
             sc.nextLine();//arda arda scan.nextline calisinca hata vermemesi icin bos bir sc.nextLine(); atadik .
 
             if (person.containsKey(tc)) {
-                System.out.println("var olan bir tc girdiniz tekrar deneyiniz...");
+                System.out.println("Var olan bir tc girdiniz tekrar deneyiniz...");
                 saveInfo();//kullanici var olan tc girdigi icin tekrar tc girisi icin saveInfo() metoduna geri gonderdik.
             } else {
                 System.out.print("adinizi giriniz: ");

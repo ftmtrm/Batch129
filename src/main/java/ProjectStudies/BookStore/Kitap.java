@@ -7,7 +7,7 @@ public class Kitap extends KitapDefter{
     public Kitap() {
     }
 
-    public Kitap(String kitapdefterID,int birimFiyat , int stok,String yayinevi , String yazarAdi) {
+    public Kitap(int kitapdefterID,int birimFiyat , int stok,String yayinevi , String yazarAdi) {
         super(kitapdefterID,birimFiyat,stok);
         this.yazarAdi = yazarAdi;
         this.yayinevi = yayinevi;

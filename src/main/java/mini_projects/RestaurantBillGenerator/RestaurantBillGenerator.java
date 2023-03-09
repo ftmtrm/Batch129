@@ -10,6 +10,8 @@ getSelectionMenu();
     public static void getSelectionMenu(){
         Scanner inp = new Scanner(System.in);
         DishService dishService =new DishService();//listede 10 tane yemek var
+        OrderService orderService=new OrderService();
+
     //2-menu tekrar tekrar gosterilsin
     //3-yiyecekler icin class olusturalim
     //7-siparis icin class olusturalim
@@ -30,21 +32,25 @@ getSelectionMenu();
                 dishService.showMenu();
                 break;
                 case 2:
+                    orderService.createOrder(dishService);
                 //siparis olustur
                 break;
                 case 3:
-                //siparis iptal
+                    //siparis iptal
+                    orderService.deleteOrder();
                 break;
                 case 4:
                  // hesap
+                    orderService.printBill();
                 break;
                 case 0:
+                System.out.println("İyi günler...");
                     break;
                 default:
                     System.out.println("Hatalı giriş");
             }
         }
-        System.out.println("İyi günler...");
+
             }
         }
 

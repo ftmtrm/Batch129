@@ -56,7 +56,7 @@
                  5)"super()" ifadesini yazmak istege baglidir, yazmasaniz da Java sanki "super()" varmis gibi davranir.
               Ama kodunuzu daha okunur kilmak icin yazmaniz tavsiye edilir.
                  6) super() ve this() ifadeleri constructor icinde her zaman ilk satirda olmalidir.
-                 7) Bir cnstructor icinde super() ve this() ifadeleri sadece bir kere kullanilabilir.(bakiniz 6.kural)
+                 7) Bir constructor icinde super() ve this() ifadeleri sadece bir kere kullanilabilir.(bakiniz 6.kural)
                  8) Inheritance'da variable'lari cagirmak icin "this(ayni classtaki variable ve methodlari cagirmak icin)"
                  veya "super(parent class'taki variable ve methodlari cagirmak icin)" kullanilir.(parantezsiz)
                  9) Inheritance'da object kullanarak variable cagirirsaniz object'in data tipini temsil eden class'dan

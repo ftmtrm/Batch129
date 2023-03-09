@@ -110,8 +110,7 @@ Java.io paketinin FileInputStream sinifi,
     Interview Question:
     Java'da alti cizili olan hersey CTE'midir?
     hayir degildir.cunku olasi bir problemle karsilasma ihtimali olunca da altini ciziyor olasi problemi
-    ongormesi nedeniyle altini ciziyor.(add exception to method
-    signature)'a basinca duzeliyor mesela.
+    ongormesi nedeniyle altini ciziyor.(add exception to method signature)'a basinca duzeliyor mesela.
 
 ****InputMismatchException: gunluk hayata uygun olmayan hata
 

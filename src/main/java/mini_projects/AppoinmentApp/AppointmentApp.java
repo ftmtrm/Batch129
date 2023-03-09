@@ -2,12 +2,13 @@ package mini_projects.AppoinmentApp;
 
 import java.util.Scanner;
 
-public class AppoinmentApp {
+public class AppointmentApp {
     public static void main(String[] args) {
+
         start();
     }
 
-    //1-ana menü
+//1-ana menü
 //2-doctor, appointment classlarını oluştur
     public static void start() {
         Scanner inp=new Scanner(System.in);

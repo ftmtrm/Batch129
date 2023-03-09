@@ -48,7 +48,7 @@ public class BiletRezervasyon {
             } else {
                 System.out.println("Hatali giris yaptiniz!!");
             }
-            System.out.println("Yeni islem icin hrhangi bir sayi giriniz, cikis icin 0 giriniz");
+            System.out.println("Yeni islem icin herhangi bir sayi giriniz, cikis icin 0 giriniz");
             select = scan.nextInt();
 
         } while (select != 0);

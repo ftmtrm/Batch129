@@ -1,25 +1,29 @@
 package ProjectStudies.BookStore;
 
 public class KitapDefter {
-    private String kitapdefterID;
+    private int kitapdefterID;
     private int birimFiyat;
     private int stok;
     public KitapDefter() {
 
+
     }
-    public KitapDefter(String kitapdefterID,int birimFiyat , int stok) {
-        setKitapdefterID(kitapdefterID);
+    public KitapDefter(int kitapdefterID, int birimFiyat , int stok) {
+        //setKitapdefterID(kitapdefterID);
+        this.kitapdefterID=kitapdefterID;
         this.birimFiyat = birimFiyat;
         setStok(stok);
     }
 
-    public String getKitapdefterID() {
+    public int getKitapdefterID() {
+
         return kitapdefterID;
     }
 
-    public void setKitapdefterID(String kitapdefterID) {
-        this.kitapdefterID = kitapdefterID;
-    }
+//    public void setKitapdefterID(int kitapdefterID) {
+//
+//        this.kitapdefterID = kitapdefterID;
+//    }
 
     public int getBirimFiyat() {
         return birimFiyat;

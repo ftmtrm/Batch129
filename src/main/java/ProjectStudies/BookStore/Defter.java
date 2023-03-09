@@ -6,7 +6,7 @@ public class Defter extends KitapDefter{
 
     public Defter() {
     }
-    public Defter(String kitapdefterID,int birimFiyat , int stok, String marka, int yaprakSayisi) {
+    public Defter(int kitapdefterID,int birimFiyat , int stok, String marka, int yaprakSayisi) {
         super(kitapdefterID, birimFiyat, stok);
         this.marka = marka;
         this.yaprakSayisi = yaprakSayisi;
